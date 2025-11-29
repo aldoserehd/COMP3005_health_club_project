@@ -18,32 +18,26 @@ All tables, relationships, and data are created programmatically using SQLAlchem
 No manual .sql files were used.
 
 Project Structure
-project-root/
-│
-├── app/
-│   ├── main.py               # Main menu and program logic
-│   ├── init_db.py            # Creates database tables
-│   ├── seed_data.py          # Inserts sample data
-│   ├── create_view.py        # Creates SQL view
-│   ├── create_trigger.py     # Creates trigger and function
-│   ├── create_index.py       # Creates index
-│   └── …
-│
-├── models/
-│   ├── base.py
-│   ├── members.py
-│   ├── trainers.py
-│   ├── rooms.py
-│   ├── class_sessions.py
-│   ├── pt_sessions.py
-│   ├── invoices.py
-│   ├── health_metrics.py
-│   └── …
-│
-└── docs/
-    ├── ERD.pdf               # ER diagram + mapping + screenshots
-    └── README.md             # This file
 
+app/
+    init_db.py
+    seed_data.py
+    main.py
+    create_view.py
+    create_trigger.py
+    create_index.py
+
+models/
+    base.py
+    entities.py
+    __init__.py
+
+docs/
+    ERD.pdf
+    README.md
+
+config.py
+.gitignore
 How to Run the Project !!
 Step 1: Install dependencies
 
@@ -96,4 +90,5 @@ Trigger and trigger function
 Python application running
 
 Video Demonstration
+
 
